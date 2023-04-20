@@ -9,7 +9,7 @@ Atlas-Raft是一个建立在数据库实现之上的使用rust编写的raft实�
 
 ## 设计
 raft 核心算法由这三个子问题组成：选主（Leader election）、日志复制（Log replication）、安全性（Safety）。这三部分共同实现了 Raft 核心的共识和容错机制。而 Raft 本质上是一种状态机的转化，通过日志和状态切换实现。
-![image-20230418162334413](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20230418162334413.png)
+![image-20230418162334413](https://suibianwanwan.oss-cn-hangzhou.aliyuncs.com/raft.png)
 > 具体了解raft的设计可以先去了解 [raft算法官方网站](https://raft.github.io/)  并且推荐结合 [解读raft共识算法](https://www.bilibili.com/video/BV1pr4y1b7H5)
 
 ### 博客
